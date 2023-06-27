@@ -7,7 +7,8 @@
 * @source https://github.com/puckzxz/NotAnotherAnimeTheme
 */
 
-@import url(https://puckzxz.github.io/NotAnotherAnimeTheme/build/v3/naat.v3.css);
+@import url("https://puckzxz.github.io/NotAnotherAnimeTheme/build/v3/naat.v3.css");
+@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
 
 :root {
   /*
@@ -83,16 +84,16 @@
   /*
     Small User Popout
   */
-  --small-user-popout-background-image: url(https://i.imgur.com/0VXpUqI.jpg);
+  /* --small-user-popout-background-image: url(https://i.imgur.com/0VXpUqI.jpg);
   --small-user-popout-background-image-position: top;
-  --small-user-popout-background-transparency: rgba(0, 0, 0, 0.6);
+  --small-user-popout-background-transparency: rgba(0, 0, 0, 0.6); */
 
   /*
     Big User Popout
   */
-  --big-user-popout-background-image: url(https://i.imgur.com/OApB5K3.jpg);
+  /* --big-user-popout-background-image: url(https://i.imgur.com/OApB5K3.jpg);
   --big-user-popout-background-transparency: rgba(0, 0, 0, 0.6);
-  --big-user-popout-background-image-position: bottom;
+  --big-user-popout-background-image-position: bottom; */
 
   /*
     Code Markup
@@ -187,6 +188,26 @@
   --reaction-emoji-hover-background-color: rgba(255, 255, 255, 0.1);
   --reaction-emoji-hover-border-color: rgba(255, 255, 255, 0.2);
 
+  --rs-small-spacing: 2px; /* Gap between avatar and status for members list/dms | MUST end in px */
+  --rs-medium-spacing: 3px; /* Gap between avatar and status for User popout | MUST end in px */
+  --rs-large-spacing: 4px; /* Gap between avatar and status for User profiles | MUST end in px */
+
+  --rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
+  --rs-medium-width: 3px; /* Thickness of status border for User popout | MUST end in px */
+  --rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
+
+  --rs-avatar-shape: 50%; /* 50% for round - 0% for square */
+
+  --rs-online-color: #43b581; /* Colour for online status */
+  --rs-idle-color: #faa61a; /* Colour for idle status */
+  --rs-dnd-color: #f04747; /* Colour for dnd status */
+  --rs-offline-color: #636b75; /* Colour for offline status */
+  --rs-streaming-color: #643da7; /* Colour for streaming status */
+  --rs-invisible-color: #747f8d; /* Colour for invisible status - Note: this will only show for your own invisibility */
+  --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
+
+  --rs-phone-visible: block;
+
 }
 
 /* extras */
@@ -252,11 +273,11 @@ Fixes reactions picker
   background-color: var(--emoji-menu-background-color);
 }
 
-.wrapper-3z7DuG {
+/* .wrapper-3z7DuG {
 background-color: var(--emoji-menu-background-color);
-}
+} */
 
-.wrapper-22rqw6 {
+.contentWrapper-2f9yME {
 background-color: var(--emoji-menu-background-color);
 }
 
@@ -397,3 +418,16 @@ Fixes the slash list
   background-repeat:no-repeat!important;
   background-size:var(--home-icon-image-zoom)!important
 } */
+
+
+.theme-dark .container-2IKOsH, .theme-dark .header-3xB4vB {
+  background-color: transparent;
+}
+
+.theme-dark .emptyPage-2TGR7j, .theme-dark .scrollerContainer-y16Rs9 {
+  background-color: transparent;
+}
+
+.prompt-1sE27N {
+  background-color: transparent;
+}
